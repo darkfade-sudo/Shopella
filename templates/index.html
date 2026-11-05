@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - Shopella</title>
     {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <style>
+        img{
+            height: auto;
+            display: block;
+        }
+
+
+
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to Shopella!</h1>
+    <h1 style="text-align: center;">Welcome to Shopella!</h1>
+   
+    <a href="{% url 'contact' %}">Contact Us</a>
+    <a href="{% url 'about' %}">About Us!</a>
+    <a href="{% url 'services' %}">Our Services</a>
+
+    
 
     <img src="{% static 'images/car.png' %}" alt="Car on a road" width="600">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit deleniti corrupti distinctio, debitis provident inventore delectus rem architecto maiores incidunt perferendis alias optio nam quae animi recusandae doloribus? Aliquam.

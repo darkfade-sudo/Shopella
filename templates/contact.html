@@ -4,11 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page - Shopella</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+
+
+
+
+
+
+
 </head>
 <body>
-    <h1>Contact Us</h1>
+<div class="container">
+    
+    <h1 class="text-center text-warning">Contact Us</h1>
+ <nav class="mb-3">
+    <a href="{% url 'index' %}">Homepage</a>
+    <a href="{% url 'about' %}">About Us!</a>
+    <a href="{% url 'services' %}">Our Services</a>
+ </nav>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde debitis quam minima temporibus illum a consequatur dolor, molestiae, officia quasi totam, impedit nihil natus ut laborum eaque itaque ea repellendus.
     Fugiat eligendi facilis earum. Deserunt ipsa laudantium accusantium aspernatur veniam, dolor, animi sed voluptatum illo reiciendis quidem. Facilis voluptates numquam consectetur rem nam? Provident enim dolor, voluptatem vitae iusto delectus.</p>
+ 
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email Address</th>
+            <th>Telephone Number</th>
+
+
+
+
+        </tr>
+      </thead>
+    
+      <tbody>
+    
+        <tr>
+            <td>Mark Doe</td>
+            <td>mark@gmail.com</td>
+            <td>0768456342</td>
+
+
+
+        </tr>
+      
+       
+      
+        <tr>
+            <td>Felix Dadivit</td>
+            <td>felix@gmail.com</td>
+            <td>0743562378</td>
+
+
+
+        </tr>
+      
+      
+        <tr>
+            <td>Leone Trops</td>
+            <td>leone@gmail.com</td>
+            <td>0789654321</td>
+
+
+
+
+        </tr>
+      
+
+      
+        <tr>
+            <td>Jay Celeste</td>
+            <td>jay@gmail.com</td>
+            <td>0789654576</td>
+
+
+
+        </tr>
+      </tbody>
+
+
+
+
+
+
+
+
+
+    </table>
+</div>
+    
     
 </body>
 </html>
